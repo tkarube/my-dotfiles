@@ -1,3 +1,3 @@
 # myvimrc
 
-This is a set of config files for my sehll environment.
+This is a set of config files for my shell environment.
