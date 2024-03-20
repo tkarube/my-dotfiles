@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt full-upgrade -y
 sudo apt autoremove -y
-sudo apt install tmux fzf curl git -y
+sudo apt install tmux fzf curl git jq -y
 
 # install tmux.conf
 curl https://raw.githubusercontent.com/tkarube/myvimrc/main/tmux.conf -o ~/.tmux.conf
