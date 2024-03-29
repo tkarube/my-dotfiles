@@ -8,8 +8,9 @@ sudo apt update
 sudo apt full-upgrade -y
 sudo apt autoremove -y
 sudo apt install tmux fzf curl git jq -y
-sudo apt install nvim -y
 sudo apt install zsh -y
+
+sudo snap install nvim --classic
 
 # install tmux.conf
 curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/tmux.conf -o ~/.tmux.conf
