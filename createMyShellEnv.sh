@@ -35,3 +35,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/zshrc -o ~/.zshrc
 
 chsh -s /bin/zsh
+reset
