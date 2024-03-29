@@ -24,7 +24,11 @@ curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/init.vim -o ~/.c
 vim +'PlugInstall --sync' +qa
 
 # install zshrc
-curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/zshrc -o ~/.zshrc
+# Oh My Zsh
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/zshrc -o ~/.zshrc
 
 chsh -s /bin/zsh
