@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # stop asking for restart services
-export DEBIAN_FRONTEND=noninteractive
-export NEEDRESTART_MODE=a
+DEBIAN_FRONTEND=noninteractive
+NEEDRESTART_MODE=a
 
 # Install packages
 sudo apt update
@@ -17,8 +17,8 @@ curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/tmux.conf -o ~/.
 
 # install vim plug
 mkdir -p ~/.config/nvim
-/bin/zsh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/init.vim -o ~/.config/nvim
 vim +'PlugInstall --sync' +qa
