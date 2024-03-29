@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
-# stop asking for restart services
-NEEDRESTART_SUSPEND=1 
-
 # Install packages
 sudo apt update
+
+# stop temporary asking for restart services
+sudo apt purge needrestart -y
+
 sudo apt full-upgrade -y
 sudo apt autoremove -y
 sudo apt install tmux fzf curl git jq -y
 sudo apt install zsh -y
+
+sudo apt install needrestart -y
 
 sudo snap install nvim --classic
 
