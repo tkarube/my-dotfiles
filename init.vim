@@ -12,6 +12,10 @@ syntax on
 
 set completeopt=menuone,noinsert
 
+# not change the cursor position when focusing window
+autocmd FocusGained * set mouse=a
+autocmd FocusLost * set mouse=
+
 """ Vim-Plug
 call plug#begin()
     Plug 'preservim/nerdtree'
