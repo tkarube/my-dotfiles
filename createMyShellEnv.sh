@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # stop asking for restart services
-DEBIAN_FRONTEND=noninteractive
-NEEDRESTART_MODE=a
+NEEDRESTART_SUSPEND=1 
 
 # Install packages
 sudo apt update
