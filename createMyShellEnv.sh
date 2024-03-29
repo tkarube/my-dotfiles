@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+# prevent apt command from asking restart services
+export DEBIAN_FRONTEND=noninteractive
+export NEEDRESTART_MODE=a
+
 # Install packages
 sudo apt update
 sudo apt full-upgrade -y
