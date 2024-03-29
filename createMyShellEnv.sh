@@ -24,7 +24,7 @@ curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/init.vim -o ~/.c
 vim +'PlugInstall --sync' +qa
 
 # install zshrc
+curl https://raw.githubusercontent.com/tkarube/my-dotfiles/main/zshrc -o ~/.zshrc
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 chsh -s /bin/zsh
-logout
