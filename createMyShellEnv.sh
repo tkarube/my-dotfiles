@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# prevent apt command from asking restart services
+# stop asking for restart services
 export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 
